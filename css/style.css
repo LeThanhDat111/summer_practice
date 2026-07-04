@@ -32,8 +32,6 @@ main {
 	height: 70%;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 	gap: 50px;
 	border-bottom: 1px rgb(79, 79, 79) dashed;
 }
@@ -74,4 +72,65 @@ footer {
 
 .txt-des {
 	color: rgb(32, 45, 233);
+}
+
+.img_dropdowns {
+	width: 15px;
+	height: 15px;
+	object-fit: cover;
+	margin-left: auto;
+}
+
+.btn_dropdown {
+	background-color: rgb(251, 152, 12);
+	color: rgb(92, 56, 189);
+	font-weight: bold;
+	border: 1px;
+	width: 100px;
+	height: 20px;
+	border-radius: 5px;
+	display: flex;
+	padding: 3px;
+}
+
+.dropdowns {
+	margin: 20px;
+	height: 5%;
+	position: relative;
+}
+
+.menu_dropdown {
+	display: flex;
+	list-style-type: none;
+	width: 100px;
+	background-color: rgb(20, 230, 34);
+	border-radius: 5px;
+	flex-direction: column;
+	gap: 5px;
+	position: absolute;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s linear;
+}
+
+.show_item {
+	max-height: 200px;
+}
+
+.item-dropdown {
+	padding-left: 3px;
+	border-radius: 5px;
+}
+
+.horver_items-dropdown:hover {
+	background-color: rgb(252, 218, 47);
+}
+
+.horver_btn-dropdown:hover {
+	background-color: rgb(199, 127, 19);
+	border: 1px rgb(10, 59, 192) solid;
+}
+
+.horver_item_dropdown:hover {
+	transform: translateY(-4px);
 }
