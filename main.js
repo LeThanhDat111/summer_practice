@@ -7,6 +7,11 @@ hamcuatoi();
 // console.log(name.myVar);
 // name.myFunction();
 
-import changeName from "./default.js";
+import changeName from './default.js';
 console.log(changeName(1, 2));
 
+let arr = ['cam', 'xoai', 'dua', 'nho', 'nho'];
+
+let kq = arr.map((item) => item + ' !');
+
+console.log(kq);
